@@ -11,7 +11,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 10
+        return movies.count
     
     }
     
@@ -20,7 +20,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let cell = UITableViewCell()
         
-        cell.textLabel!.text = "row: \(indexPath.row)"
+        let movie = movies[indexPath.row]
+        
+        let title = movie["title"] as! String
+        
+        cell.textLabel!.text = title
         
         return cell
     }
@@ -55,6 +59,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     // TODO: Get the array of movies
                     // TODO: Store the movies in a property to use elsewhere
                     // TODO: Reload your table view data
+                 
+                 self.tableView.reloadData()
 
              }
         }
