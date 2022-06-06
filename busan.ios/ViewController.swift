@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -18,13 +19,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
         
         let movie = movies[indexPath.row]
         
         let title = movie["title"] as! String
         
-        cell.textLabel!.text = title
+        let desc = movie["overview"] as! String
+        
+        cell.titleLabel.text = title
+        cell.descLabel.text = desc
+        
+        let baseUrl = "https://image.tmdb.org/t/p/w185"
+        
+        let posterPath = movie["poster_path"] as! String
+        
+        let posterUrl = URL(string: baseUrl + posterPath)
+        
+        cell.photoLabel.af.setImage(withURL: posterUrl!)
         
         return cell
     }
@@ -39,6 +51,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        tableView.rowHeight = 130
         
         tableView.dataSource = self
         tableView.delegate = self

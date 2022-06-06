@@ -1,0 +1,6 @@
+framework module Pods_busan_ios_busan_iosUITests {
+  umbrella header "Pods-busan.ios-busan.iosUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
