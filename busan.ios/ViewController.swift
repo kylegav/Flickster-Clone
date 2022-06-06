@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -30,8 +31,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.descLabel.text = desc
         
         let baseUrl = "https://image.tmdb.org/t/p"
-        let posterPath = movies["poster_path"] as! String
-        let posterUrl = URL(string: baseUrl + posterPath)
+        
+        let posterPath = movie["poster_path"] as! String
+        
+        let posterUrl = URL(string: baseUrl + posterPath)!
+        
+        cell.photoLabel.af.setImage(withURL: posterUrl)
         
         return cell
     }
