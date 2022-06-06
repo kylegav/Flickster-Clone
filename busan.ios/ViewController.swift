@@ -18,13 +18,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
         
         let movie = movies[indexPath.row]
         
         let title = movie["title"] as! String
         
-        cell.textLabel!.text = title
+        let desc = movie["overview"] as! String
+        
+        cell.titleLabel.text = title
+        cell.descLabel.text = desc
+        
+        let baseUrl = "https://image.tmdb.org/t/p"
+        let posterPath = movies["poster_path"] as! String
+        let posterUrl = URL(string: baseUrl + posterPath)
         
         return cell
     }
