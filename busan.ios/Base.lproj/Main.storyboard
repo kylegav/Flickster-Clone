@@ -48,6 +48,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descLabel" destination="j3u-7L-joi" id="BxN-c2-g8A"/>
+                                            <outlet property="photoLabel" destination="9T1-eo-HWj" id="u72-RM-l0R"/>
+                                            <outlet property="titleLabel" destination="sBf-84-DJS" id="0bi-6H-cec"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

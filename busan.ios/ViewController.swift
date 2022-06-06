@@ -52,6 +52,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        tableView.rowHeight = 130
+        
         tableView.dataSource = self
         tableView.delegate = self
         
