@@ -191,7 +191,7 @@
             </objects>
             <point key="canvasLocation" x="19" y="82"/>
         </scene>
-        <!--Movie Grid View Controller-->
+        <!--Superhero-->
         <scene sceneID="eBZ-Uw-6Ni">
             <objects>
                 <viewController id="kVb-wy-feW" customClass="MovieGridViewController" customModule="busan_ios" customModuleProvider="target" sceneMemberID="viewController">
@@ -201,7 +201,9 @@
                         <viewLayoutGuide key="safeArea" id="6AQ-Ta-6G9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="OXD-4R-vfy"/>
+                    <navigationItem key="navigationItem" title="Superhero" id="OXD-4R-vfy">
+                        <barButtonItem key="backBarButtonItem" title="back" id="TRG-lH-sDQ"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kr9-I8-zU2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
