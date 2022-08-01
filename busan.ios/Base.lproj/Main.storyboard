@@ -52,6 +52,7 @@
                                             <outlet property="descLabel" destination="j3u-7L-joi" id="BxN-c2-g8A"/>
                                             <outlet property="photoLabel" destination="9T1-eo-HWj" id="u72-RM-l0R"/>
                                             <outlet property="titleLabel" destination="sBf-84-DJS" id="0bi-6H-cec"/>
+                                            <segue destination="r8G-zb-yeG" kind="show" id="Iw8-Z5-0Ao"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -69,16 +70,17 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="82.366071428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie Details View Controller-->
         <scene sceneID="ISI-Ga-Wfo">
             <objects>
-                <viewController id="r8G-zb-yeG" sceneMemberID="viewController">
+                <viewController id="r8G-zb-yeG" customClass="MovieDetailsViewController" customModule="busan_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NG5-aL-9v7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="o0l-NK-uzb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7k1-dk-Lg6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BKS-sf-pmc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
