@@ -30,17 +30,16 @@ class MovieDetailsViewController: UIViewController {
         
         descLabel.text = movie["overview"] as? String
         
-        let baseUrl = "https://image.tmdb.org/t/p/w185"
         
         let posterPath = movie["poster_path"] as! String
         
-        let posterUrl = URL(string: baseUrl + posterPath)
+        let posterUrl = URL(string: "https://image.tmdb.org/t/p/w185" + posterPath)
         
         poster.af.setImage(withURL: posterUrl!)
         
         let backdropPath = movie["backdrop_path"] as! String
         
-        let backdropUrl = URL(string: baseUrl + backdropPath)
+        let backdropUrl = URL(string: "https://image.tmdb.org/t/p/w780" + backdropPath)
         
         backdrop.af.setImage(withURL: backdropUrl!)
 
