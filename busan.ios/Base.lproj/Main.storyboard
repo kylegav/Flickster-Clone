@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4mB-1u-BYS">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="busan_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="olr-tD-2U3">
@@ -75,16 +75,39 @@
             <objects>
                 <viewController id="r8G-zb-yeG" customClass="MovieDetailsViewController" customModule="busan_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NG5-aL-9v7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YvL-1B-J5v">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="f7K-Bf-eBN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="efC-Z7-QoX">
+                                <rect key="frame" x="0.0" y="185" width="99" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="94O-eh-Hlg"/>
+                                    <constraint firstAttribute="height" constant="128" id="mjx-Xr-Pdx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="o0l-NK-uzb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YvL-1B-J5v" firstAttribute="leading" secondItem="o0l-NK-uzb" secondAttribute="leading" id="5WJ-eO-ctW"/>
+                            <constraint firstItem="YvL-1B-J5v" firstAttribute="trailing" secondItem="o0l-NK-uzb" secondAttribute="trailing" id="DVk-4c-9vI"/>
+                            <constraint firstItem="efC-Z7-QoX" firstAttribute="centerY" secondItem="YvL-1B-J5v" secondAttribute="centerY" constant="124" id="JcJ-EE-h9a"/>
+                            <constraint firstItem="YvL-1B-J5v" firstAttribute="leading" secondItem="o0l-NK-uzb" secondAttribute="leading" id="RVt-oE-kr5"/>
+                            <constraint firstItem="YvL-1B-J5v" firstAttribute="top" secondItem="NG5-aL-9v7" secondAttribute="top" id="czo-Zh-T7W"/>
+                            <constraint firstItem="efC-Z7-QoX" firstAttribute="leading" secondItem="o0l-NK-uzb" secondAttribute="leading" id="r9e-4R-2jg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7k1-dk-Lg6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BKS-sf-pmc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1804" y="82"/>
+            <point key="canvasLocation" x="1802.8985507246377" y="81.696428571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cmu-wV-PSb">
@@ -92,7 +115,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4mB-1u-BYS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DK6-A1-iuX">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

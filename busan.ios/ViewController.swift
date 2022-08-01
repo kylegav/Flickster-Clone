@@ -95,7 +95,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         detailsViewController.movie = movie
         
-        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
 
