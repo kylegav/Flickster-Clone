@@ -28,7 +28,6 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9T1-eo-HWj">
-
                                                     <rect key="frame" x="6" y="6" width="98" height="128"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="98" id="bC6-51-Jhj"/>
@@ -46,13 +45,12 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBf-84-DJS">
                                                     <rect key="frame" x="110" y="11" width="278" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>f
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-
                                                 <constraint firstItem="sBf-84-DJS" firstAttribute="leading" secondItem="9T1-eo-HWj" secondAttribute="trailing" constant="6" id="8cP-qv-Pu7"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="sBf-84-DJS" secondAttribute="trailing" constant="6" id="9u3-wb-sDw"/>
                                                 <constraint firstItem="9T1-eo-HWj" firstAttribute="leading" secondItem="AzR-8Z-fC7" secondAttribute="leading" constant="6" id="Pse-ES-1OW"/>
@@ -61,8 +59,6 @@
                                                 <constraint firstItem="j3u-7L-joi" firstAttribute="top" secondItem="sBf-84-DJS" secondAttribute="bottom" constant="6" id="iVv-ve-gD1"/>
                                                 <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="j3u-7L-joi" secondAttribute="trailing" constant="10" id="nRO-I6-yH8"/>
                                                 <constraint firstItem="j3u-7L-joi" firstAttribute="leading" secondItem="9T1-eo-HWj" secondAttribute="trailing" constant="5" id="yWp-NC-E5d"/>
-
-
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -98,7 +94,7 @@
             <objects>
                 <viewController id="r8G-zb-yeG" customClass="MovieDetailsViewController" customModule="busan_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NG5-aL-9v7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YvL-1B-J5v">
@@ -107,14 +103,14 @@
                                     <constraint firstAttribute="height" constant="250" id="f7K-Bf-eBN"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veO-hZ-hM0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veO-hZ-hM0">
                                 <rect key="frame" x="116" y="272" width="298" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpw-ec-1eh">
-                                <rect key="frame" x="6" y="332" width="402" height="19.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpw-ec-1eh">
+                                <rect key="frame" x="6" y="332" width="402" height="19.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
