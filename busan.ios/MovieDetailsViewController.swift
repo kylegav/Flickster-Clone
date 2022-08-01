@@ -27,8 +27,11 @@ class MovieDetailsViewController: UIViewController {
         
         
         titleLabel.text = movie["title"] as? String
+        titleLabel.sizeToFit()
+        
         
         descLabel.text = movie["overview"] as? String
+        descLabel.sizeToFit()
         
         
         let posterPath = movie["poster_path"] as! String
