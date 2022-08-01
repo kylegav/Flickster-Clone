@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4mB-1u-BYS">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,22 +13,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="busan_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="olr-tD-2U3">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="olr-tD-2U3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="130" id="ZpZ-Wd-iUA" customClass="MovieCell" customModule="busan_ios" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="130"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZpZ-Wd-iUA" id="AzR-8Z-fC7">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9T1-eo-HWj">
+
                                                     <rect key="frame" x="6" y="6" width="98" height="128"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="98" id="bC6-51-Jhj"/>
@@ -46,12 +46,13 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBf-84-DJS">
                                                     <rect key="frame" x="110" y="11" width="278" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>f
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+
                                                 <constraint firstItem="sBf-84-DJS" firstAttribute="leading" secondItem="9T1-eo-HWj" secondAttribute="trailing" constant="6" id="8cP-qv-Pu7"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="sBf-84-DJS" secondAttribute="trailing" constant="6" id="9u3-wb-sDw"/>
                                                 <constraint firstItem="9T1-eo-HWj" firstAttribute="leading" secondItem="AzR-8Z-fC7" secondAttribute="leading" constant="6" id="Pse-ES-1OW"/>
@@ -60,6 +61,8 @@
                                                 <constraint firstItem="j3u-7L-joi" firstAttribute="top" secondItem="sBf-84-DJS" secondAttribute="bottom" constant="6" id="iVv-ve-gD1"/>
                                                 <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="j3u-7L-joi" secondAttribute="trailing" constant="10" id="nRO-I6-yH8"/>
                                                 <constraint firstItem="j3u-7L-joi" firstAttribute="leading" secondItem="9T1-eo-HWj" secondAttribute="trailing" constant="5" id="yWp-NC-E5d"/>
+
+
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -74,6 +77,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="olr-tD-2U3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="01X-5W-GpC"/>
+                            <constraint firstItem="olr-tD-2U3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nzh-dr-x2w"/>
+                            <constraint firstAttribute="bottom" secondItem="olr-tD-2U3" secondAttribute="bottom" id="hRi-rm-GTu"/>
+                            <constraint firstAttribute="trailing" secondItem="olr-tD-2U3" secondAttribute="trailing" id="ilB-cO-ekE"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="QDd-bt-S8Y"/>
                     <connections>
@@ -82,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="82.366071428571431"/>
+            <point key="canvasLocation" x="927.536231884058" y="81.026785714285708"/>
         </scene>
         <!--Movie Details View Controller-->
         <scene sceneID="ISI-Ga-Wfo">
@@ -152,7 +161,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4mB-1u-BYS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DK6-A1-iuX">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
