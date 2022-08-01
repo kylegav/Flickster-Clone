@@ -3,6 +3,7 @@
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -169,11 +170,13 @@
             </objects>
             <point key="canvasLocation" x="1597" y="82"/>
         </scene>
-        <!--Item-->
+        <!--Now Playing-->
         <scene sceneID="cmu-wV-PSb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4mB-1u-BYS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="e7g-Np-qxi"/>
+                    <tabBarItem key="tabBarItem" title="Now Playing" id="e7g-Np-qxi">
+                        <imageReference key="image" image="now_playing_tabbar_item" symbolScale="large"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DK6-A1-iuX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -204,11 +207,11 @@
             </objects>
             <point key="canvasLocation" x="809" y="832"/>
         </scene>
-        <!--Item-->
+        <!--Superhero-->
         <scene sceneID="NYK-BE-0sW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ggF-VJ-KPL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Vih-aT-LrB"/>
+                    <tabBarItem key="tabBarItem" title="Superhero" image="superhero_tabbar_item" id="Vih-aT-LrB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a6I-gS-vdh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -225,6 +228,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="now_playing_tabbar_item" width="21" height="21"/>
+        <image name="superhero_tabbar_item" width="21" height="23"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
