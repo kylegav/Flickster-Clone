@@ -225,7 +225,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="200" height="250"/>
                                         <connections>
-                                            <outlet property="posterView" destination="pQ2-kH-Qat" id="vLa-7i-f02"/>
+                                            <outlet property="posterView" destination="9xD-SL-0Go" id="9iD-sR-t77"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
