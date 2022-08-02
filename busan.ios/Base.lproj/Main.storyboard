@@ -241,6 +241,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Superhero" id="OXD-4R-vfy"/>
+                    <connections>
+                        <outlet property="collectionView" destination="h3Y-NP-hIp" id="Vog-53-gms"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kr9-I8-zU2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
