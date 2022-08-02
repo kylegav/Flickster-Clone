@@ -15,6 +15,7 @@
 		C544D7E72897517900F57186 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = C544D7E62897517900F57186 /* AlamofireImage */; };
 		C544D7E9289751E000F57186 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C544D7E8289751E000F57186 /* MovieDetailsViewController.swift */; };
 		C544D7EB2897B5EF00F57186 /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C544D7EA2897B5EF00F57186 /* MovieGridViewController.swift */; };
+		C544D7F32899AE5600F57186 /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C544D7F22899AE5500F57186 /* MovieGridCell.swift */; };
 		C5BB076B28499AA800E60157 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BB076A28499AA800E60157 /* AppDelegate.swift */; };
 		C5BB076D28499AA800E60157 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BB076C28499AA800E60157 /* SceneDelegate.swift */; };
 		C5BB076F28499AA800E60157 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BB076E28499AA800E60157 /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 		C5404654284DA53D008D9B7E /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		C544D7E8289751E000F57186 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		C544D7EA2897B5EF00F57186 /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridViewController.swift; sourceTree = "<group>"; };
+		C544D7F22899AE5500F57186 /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
 		C5BB076728499AA800E60157 /* busan.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = busan.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5BB076A28499AA800E60157 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5BB076C28499AA800E60157 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				C5BB076A28499AA800E60157 /* AppDelegate.swift */,
 				C5BB076C28499AA800E60157 /* SceneDelegate.swift */,
 				C5BB076E28499AA800E60157 /* ViewController.swift */,
+				C544D7F22899AE5500F57186 /* MovieGridCell.swift */,
 				C5BB077028499AA800E60157 /* Main.storyboard */,
 				C5404654284DA53D008D9B7E /* MovieCell.swift */,
 				C5BB077628499AAA00E60157 /* Assets.xcassets */,
@@ -434,6 +437,7 @@
 				C5BB077528499AA800E60157 /* busan_ios.xcdatamodeld in Sources */,
 				C544D7E9289751E000F57186 /* MovieDetailsViewController.swift in Sources */,
 				C544D7EB2897B5EF00F57186 /* MovieGridViewController.swift in Sources */,
+				C544D7F32899AE5600F57186 /* MovieGridCell.swift in Sources */,
 				C5BB076B28499AA800E60157 /* AppDelegate.swift in Sources */,
 				C5404655284DA53D008D9B7E /* MovieCell.swift in Sources */,
 				C5BB076D28499AA800E60157 /* SceneDelegate.swift in Sources */,
