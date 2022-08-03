@@ -213,17 +213,16 @@
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieGridCell" id="9bd-fe-kH2" customClass="MovieGridCell" customModule="busan_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="112" height="179"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" id="pQ2-kH-Qat" customClass="MovieGridCell" customModule="busan_ios" customModuleProvider="target">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="j6u-FS-0rw">
                                             <rect key="frame" x="0.0" y="0.0" width="112" height="179"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9xD-SL-0Go">
-                                                    <rect key="frame" x="0.0" y="-8" width="119" height="195"/>
+                                                    <rect key="frame" x="0.0" y="-8" width="119" height="194"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="112" height="179"/>
                                         <connections>
                                             <outlet property="posterView" destination="9xD-SL-0Go" id="9iD-sR-t77"/>
                                         </connections>
