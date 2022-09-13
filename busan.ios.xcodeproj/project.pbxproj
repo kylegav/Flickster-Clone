@@ -132,6 +132,45 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C56D088728D102050036BD19 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C5BB076A28499AA800E60157 /* AppDelegate.swift */,
+				C5BB076C28499AA800E60157 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		C56D088828D102160036BD19 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C544D7E8289751E000F57186 /* MovieDetailsViewController.swift */,
+				C56D088028D0D9080036BD19 /* TicketsViewController.swift */,
+				C56D087E28D0D8FB0036BD19 /* ReelsViewController.swift */,
+				C5BB076E28499AA800E60157 /* ViewController.swift */,
+				C544D7EA2897B5EF00F57186 /* MovieGridViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C56D088928D102320036BD19 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C544D7F22899AE5500F57186 /* MovieGridCell.swift */,
+				C5404654284DA53D008D9B7E /* MovieCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C56D088A28D102400036BD19 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C5BB077828499AAA00E60157 /* LaunchScreen.storyboard */,
+				C5BB077028499AA800E60157 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		C5BB075E28499AA800E60157 = {
 			isa = PBXGroup;
 			children = (
@@ -157,20 +196,13 @@
 		C5BB076928499AA800E60157 /* busan.ios */ = {
 			isa = PBXGroup;
 			children = (
-				C5BB076A28499AA800E60157 /* AppDelegate.swift */,
-				C5BB076C28499AA800E60157 /* SceneDelegate.swift */,
-				C5BB076E28499AA800E60157 /* ViewController.swift */,
-				C544D7F22899AE5500F57186 /* MovieGridCell.swift */,
-				C5BB077028499AA800E60157 /* Main.storyboard */,
-				C56D087E28D0D8FB0036BD19 /* ReelsViewController.swift */,
-				C56D088028D0D9080036BD19 /* TicketsViewController.swift */,
-				C5404654284DA53D008D9B7E /* MovieCell.swift */,
+				C56D088A28D102400036BD19 /* Storyboards */,
+				C56D088828D102160036BD19 /* ViewControllers */,
+				C56D088728D102050036BD19 /* Delegate */,
+				C56D088928D102320036BD19 /* Cells */,
 				C5BB077628499AAA00E60157 /* Assets.xcassets */,
-				C5BB077828499AAA00E60157 /* LaunchScreen.storyboard */,
 				C5BB077B28499AAA00E60157 /* Info.plist */,
 				C5BB077328499AA800E60157 /* busan_ios.xcdatamodeld */,
-				C544D7E8289751E000F57186 /* MovieDetailsViewController.swift */,
-				C544D7EA2897B5EF00F57186 /* MovieGridViewController.swift */,
 			);
 			path = busan.ios;
 			sourceTree = "<group>";
